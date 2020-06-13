@@ -1,0 +1,225 @@
+* {
+    box-sizing:border-box;
+    transition:all 0.3s;
+    font-family:Arial, sans-serif;
+}
+body {
+    margin:0;
+    padding:0;
+}
+/*==================================CONTAINER==================================*/
+.container-header {
+    width:1530px;
+    display:flex;
+    justify-content:space-between;
+}
+.container {
+    width:1238px;
+    display:flex;
+    justify-content:space-between;
+}
+/*==================================HEADER==================================*/
+header {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-bottom:1px solid #ebebeb;
+}
+.topo-left {
+    margin-top:20px;
+}
+.formulario {
+    display:flex;
+    align-items:center;
+}
+.logo img{
+    width:90px;
+    margin-right:44px;
+}
+form {
+    display:flex;
+    align-items:center;
+}
+form input[type=search] {
+    width:590px;
+    height:44px;
+    padding-left:22px;
+    font-size:16px;
+    border:0;
+    border-top:1px solid #dfe1e5;
+    border-left:1px solid #dfe1e5;
+    border-bottom:1px solid #dfe1e5;
+    border-top-left-radius:22px;
+    border-bottom-left-radius:22px;
+}
+.teclado,
+label {
+    height:44px;
+    line-height:44px;
+    padding-left:14px;
+    padding-right:5px;
+    border-top:1px solid #dfe1e5;
+    border-bottom:1px solid #dfe1e5;
+}
+label {
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    padding-right:20px;
+    border-right:1px solid #dfe1e5;
+    border-bottom:1px solid #dfe1e5;
+    border-top-right-radius:22px;
+    border-bottom-right-radius:22px;
+}
+.menu {
+    display:flex;
+    justify-content:flex-end;
+    margin-top:10px;
+}
+.menu nav ul{
+    display:flex;
+    align-items:center;
+    list-style:none;
+}
+.menu nav a {
+    color:#5f6368;
+    font-size:13px;
+    text-decoration:none;
+    padding-left:10px;
+    padding-right:10px;
+}
+.menu nav a img{
+    margin-right:6px;
+}
+.menu nav .ativo a{
+    color:#1a73e8;
+    padding-bottom:13px;
+    border-bottom:3px solid #1a73e8;
+}
+.topo-right {
+    display:flex;
+    justify-content:center;
+    margin-top:27px;
+}
+.menu-profile {
+    height:30px;
+    display:flex;
+    align-items:center;
+}
+.menu-profile img {
+    cursor:pointer;
+    margin-left:11px;
+    margin-right:11px;
+}
+/*==================================MAIN==================================*/
+#main {
+    display:flex;
+    justify-content:center;
+}
+.column  {
+    flex-direction:column;
+}
+.aproximadamente {
+    color:#70757a;
+    font-size:14px;
+    margin-top:16px;
+    margin-bottom:20px;
+}
+.resultado-item {
+    display:flex;
+    flex-direction:column;
+    margin-bottom:30px;
+}
+.resultado-item-link{
+    cursor:pointer;
+    color:#202124;
+    font-size:14px;
+}
+.resultado-item-titulo {
+    max-width:550px;
+    cursor:pointer;
+    color:#1a0dab;
+    font-size:20px;
+    margin-top:8px;
+}
+.resultado-item-desc {
+    max-width:580px;
+    color:#5f6368;
+    font-size:14px;
+    line-height:22px;
+    margin-top:6px;
+}
+.resultado-item-desc span{
+    font-weight:bold;
+}
+/*==================================RESPONSIVIDADE==================================*/
+@media (max-width:1530px) {
+    .logo {
+        margin-left:20px;
+    }
+    .topo-right {
+        margin-right:20px;
+    }
+}
+@media (max-width:1250px) {
+    .container {
+        padding-left:20px;
+    }
+    form input[type="search"] {
+        width:450px;
+    }
+}
+@media (max-width:840px) {
+    form input[type="search"] {
+        width:270px;
+    }
+    .menu nav ul {
+        flex-wrap:wrap;
+    }
+    .menu nav a {
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .menu nav .ativo a {
+        padding-bottom:0px;
+        border:0;
+    }
+}
+@media (max-width:620px) {
+    .formulario {
+        flex-direction:column;
+    }
+    .logo img {
+        margin-right:20px;
+    }
+    form input[type="search"] {
+        height:34px;
+        width:200px;
+    }
+    .teclado, label {
+        height:34px;
+        line-height:34px;
+    }
+    label {
+        padding-right:10px;
+    }
+    .menu nav ul {
+        padding-left:0px;
+        justify-content:center;
+    }
+    .topo-right {
+        display:none;
+    }
+    .resultado-item {
+        flex-wrap:wrap;
+    }
+}
+@media (max-width:500px) {
+    .container {
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .menu nav a {
+        line-height:30px;
+    }
+}
