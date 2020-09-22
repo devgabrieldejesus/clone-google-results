@@ -7,6 +7,9 @@ Project created in order to exercise my knowledge in HTML5 and CSS3.
 `Web preview`
 ![](assets/web-preview.png)
 
+## Deployment in
+https://devgabrieldejesus.github.io/clone-google-results/
+
 ## Release history
 
 * 0.0.2
